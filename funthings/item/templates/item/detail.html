@@ -1,4 +1,4 @@
-{% extends 'core/base.html' %}
+{% extends 'main/base.html' %}
 
 {% block title %}{{ item.name }}{% endblock %}
 
@@ -8,5 +8,8 @@
         <img src="{{ item.image.url }}" class="rounded-xl">
     </div>
 
-    
-    {% endblock %}
+    <div class="col-span-2 p-6 bg-gray-100 rounded-xl">
+        <h1 class="mb-6 text-3xl">{{ item.name }}</h1>
+    </div>
+</div>
+{% endblock %}
